@@ -1,0 +1,30 @@
+.planet-two {
+   background-image: url('../../assets/images/alien-planet.png');
+   background-position: right;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 600px;
+   height: 600px;
+   z-index: 2;
+
+   .pond-two {
+      position: absolute;
+      top: 75%;
+      right: 1%;
+      background-image: url("../../assets/images/alien-pond.png");
+      background-size: cover;
+      width: 250px;
+      height: 125px;
+   }
+
+   .attack {
+      position: absolute;
+      top: 50%;
+      background-image: url('../../assets/images/alien-attack.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 150px;
+   }
+}

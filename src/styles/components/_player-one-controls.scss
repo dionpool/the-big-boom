@@ -1,0 +1,103 @@
+.player-one-area {
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin-left: 20px;
+
+   .player-one-energy {
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #e0c100;
+      border: 2px solid #ffef98;
+      color: #0f0f0f;
+
+      span {
+         font-weight: 600;
+      }
+   }
+
+   .player-one-log {
+      margin-left: 20px;
+
+      ul {
+         list-style: none;
+         max-height: 117px;
+         overflow-y: auto;
+         padding-left: 0;
+
+         li {
+            color: #999;
+         }
+      }
+   }
+
+   .player-one-controls {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      gap: 10px;
+
+      button {
+         width: 50px;
+         height: 50px;
+         font-size: 1.125rem;
+         margin: 0;
+         //clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+
+         &.selected {
+            background-color: #fff !important;
+            color: #000 !important;
+         }
+
+         &.cracked {
+            clip-path: polygon(0 0, 30% 0, 0% 100%, 0 100%);
+            background-color: #FFF; /* Set crack color */
+            animation: crackAnimation 1s ease forwards;
+         }
+
+         @keyframes crackAnimation {
+            0% {
+               clip-path: polygon(0 0, 30% 0, 0% 100%, 0 100%);
+            }
+            100% {
+               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+         }
+
+         &.carbon {
+            background-color: $carbon;
+            border: 2px solid $carbonBorder;
+            color: #fff;
+         }
+
+         &.methane {
+            background-color: $methane;
+            border: 2px solid $methaneBorder;
+            color: #0f0f0f;
+         }
+
+         &.oxygen {
+            background-color: $oxygen;
+            border: 2px solid $oxygenBorder;
+            color: #0f0f0f;
+         }
+
+         &.hydrogen {
+            background-color: $hydrogen;
+            border: 2px solid $hydrogenBorder;
+            color: #0f0f0f;
+         }
+
+         &.ammonia {
+            background-color: $ammonia;
+            border: 2px solid $ammoniaBorder;
+            color: #fff;
+         }
+
+         &.phosphite {
+            background-color: $phosphite;
+            border: 2px solid $phosphiteBorder;
+            color: #0f0f0f;
+         }
+      }
+   }
+}

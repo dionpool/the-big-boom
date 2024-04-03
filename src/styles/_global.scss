@@ -1,0 +1,43 @@
+main {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   height: calc(100vh - 175px);
+   background-image: url("https://www.ejiltalk.org/wp-content/uploads/2021/03/pexels-photo-110854.jpeg");
+   //background-color: #220033;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   .sun {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      height: 900px;
+      display: block;
+      z-index: 100;
+      background-image: url("../assets/images/sun.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+   }
+
+   .overlay {
+      position: absolute;
+      height: calc(100vh - 175px);
+      width: 100vw;
+      background-color: rgba(0, 0, 0, .5);
+      z-index: 1
+   }
+}
+
+footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #0f0f0f;
+   color: #fff;
+   height: 175px;
+}

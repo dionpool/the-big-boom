@@ -1,0 +1,30 @@
+.planet-one {
+   background-image: url('../../assets/images/earth-planet.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 600px;
+   height: 650px;
+   rotate: 360deg;
+   z-index: 2;
+
+   .pond-one {
+      position: absolute;
+      top: 65%;
+      left: 5%;
+      background-image: url("../../assets/images/earth-pond.png");
+      background-size: cover;
+      width: 250px;
+      height: 125px;
+   }
+
+   .attack {
+      position: absolute;
+      top: 50%;
+      background-image: url('../../assets/images/earth-attack.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 200px;
+      height: 150px;
+   }
+}
